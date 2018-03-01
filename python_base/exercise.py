@@ -15,6 +15,14 @@
 		# ~ print('C')
 
 
+# score = int(input('请输入你的成绩分数：'))
+# if score >= 90:
+#     print('成绩为A')
+# elif score >= 60 and score < 90:
+#     print('成绩为B')
+# else:
+#     print('成绩为C')
+
 '''
 第二题：for 
     创建一个名为favorite_places的字典。
@@ -51,14 +59,19 @@ favorite_places = {'张三':['上海','北京','广州'],'李四':['九寨沟','
    1x2 = 2 2x2 = 4
 '''
 
-start_num = 1
-while(start_num <= 9):
-	second_num = 1
-	while(second_num <= start_num):
-		print(str(second_num)+ '*'+str(start_num) +'='+ str(second_num * start_num), end=' ')
-		second_num+=1
-	start_num+=1
-	print('')
+# ~ start_num = 1
+# ~ while(start_num <= 9):
+	# ~ second_num = 1
+	# ~ while(second_num <= start_num):
+		# ~ print(str(second_num)+ '*'+str(start_num) +'='+ str(second_num * start_num), end=' ')
+		# ~ second_num+=1
+	# ~ start_num+=1
+	# ~ print('')
+	
+for i in range(1, 10):  
+	for j in range(1, i+1):
+		print('%dX%d=%d'%(j,i,(i*j)), end=' ')	
+	print()
 	
 '''
 第四题：
@@ -67,11 +80,11 @@ while(start_num <= 9):
     range(1,101)
 '''
 
-total_sum = 0
-for item in range(1,101):
-	total_sum += item
+# ~ total_sum = 0
+# ~ for item in range(1,101):
+	# ~ total_sum += item
 	
-print('1-100的和为'+ str(total_sum))
+# ~ print('1-100的和为'+ str(total_sum))
 
 
 '''
@@ -80,8 +93,8 @@ print('1-100的和为'+ str(total_sum))
     将字符串以列表的形式输出(如果字符串包含整数,转为整型)?
 '''
 #todo
-string  = input('请输入字符串（q or quit for end）：')
-string2 = string.encode('gbk')  
-print (string.upper())
-num_string = filter(string.isdigit,string2)
-print (num_string)
+# ~ string  = input('请输入字符串（q or quit for end）：')
+# ~ string2 = string.encode('gbk')  
+# ~ print (string.upper())
+# ~ num_string = filter(string.isdigit,string2)
+# ~ print (num_string)
